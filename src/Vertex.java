@@ -14,10 +14,6 @@ public class Vertex<T> {
         return data;
     }
 
-    public void setData(T data) {
-        this.data = data;
-    }
-
     public void addAdjacentVertex(Vertex<T> destination, double weight) {
         adjacentVertices.put(destination, weight);
     }

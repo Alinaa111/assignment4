@@ -13,12 +13,10 @@ public class WeightedGraph<T> {
         this.vertices = new HashMap<>();
     }
 
-    // Add a vertex by its data
     public void addVertex(T data) {
         vertices.putIfAbsent(data, new Vertex<>(data));
     }
 
-    // Add an edge between two data values
     public void addEdge(T sourceData, T destData, double weight) {
         addVertex(sourceData);
         addVertex(destData);
